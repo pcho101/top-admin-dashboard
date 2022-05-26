@@ -11,7 +11,9 @@ body {
 .sidebar {
     grid-row: 1 / 3;
     display: grid;
-    grid-template-rows: 1fr 5fr 5fr;
+    grid-template-rows: 60px 300px 150px;
+    background-color: darkolivegreen;
+    font-size: 1.2rem;
 }
 
 .logo-section,
@@ -19,6 +21,21 @@ body {
 .nav-bottom {
     display: grid;
     grid-template-columns: 1fr 5fr;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.nav-item {
+    grid-column: 1 / 3;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 .header {
