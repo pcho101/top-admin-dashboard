@@ -1,11 +1,19 @@
-/* div {
-    border: 1px solid red;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+:root {
+    --sidebar-bg-color: #be123c;
+    --nav-hover-bg-color: #9f1239;
+    --sidebar-txt-color: white;
+    --button-bg-color: #be123c;
+    --button-hover-bg-color: #9f1239;
+    --main-bg-color: #ffe4e6;
+}
 
 body {
     display: grid;
     grid-template-columns: min-content 4fr;
     grid-template-rows: 1fr 5fr;
+    font-family: 'Source Serif Pro', serif;
 }
 
 .sidebar {
@@ -13,9 +21,9 @@ body {
     display: grid;
     gap: 30px;
     grid-template-rows: repeat(3, min-content);
-    background-color: darkolivegreen;
-    font-size: 1.2rem;
-    color: white;
+    background-color: var(--sidebar-bg-color);
+    font-size: 1.3rem;
+    color: var(--sidebar-txt-color);
 }
 
 .sidebar img {
@@ -51,7 +59,7 @@ body {
 }
 
 .nav-item:hover {
-    background-color: rgb(49, 61, 27);
+    background-color: var(--nav-hover-bg-color);
     border-left: 4px solid white;
     cursor: pointer;
 }
@@ -90,7 +98,8 @@ a {
 .profile-bar {
     display: grid;
     gap: 5px;
-    grid-template-columns: 3fr 1fr 4fr;
+    grid-template-columns: repeat(3, min-content);
+    justify-self: right;
 }
 
 .profile-bar>img {
@@ -106,14 +115,32 @@ a {
     text-align: center;
     border-radius: 50%;
     color: white;
-    background-color: green;
-    box-shadow: 2px 2px 2px 0px #777777;
+    background-color: #155e75;
+    box-shadow: 1px 1px 2px 0px #777777;
+    font-size: 1.2rem;
+}
+
+.profile-bar-pic#acc-1 {
+    background-color: #fbbf24;
+}
+
+.profile-bar-pic#acc-2 {
+    background-color: #14532d;
+}
+
+.profile-bar-pic#acc-3 {
+    background-color: #7e22ce;
+}
+
+.profile-bar-pic#acc-4 {
+    background-color: #374151;
 }
 
 .profile-bar>p {
     place-self: center;
     font-size: 1.5rem;
     font-weight: 700;
+    padding: 0px 24px;
 }
 
 .user-info {
@@ -147,7 +174,8 @@ a {
     display: grid;
     gap: 16px;
     padding: 0px 12px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, min-content);
+    justify-self: right;
 }
 
 button {
@@ -155,17 +183,18 @@ button {
     padding: 6px 12px;
     border-radius: 8px;
     color: white;
-    background-color: darkolivegreen;
+    background-color: var(--button-bg-color);
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: rgb(49, 61, 27);
+    background-color: var(--button-hover-bg-color);
 }
 
 .main-content {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    background-color: rgb(162, 190, 113);
+    background-color: var(--main-bg-color);
     gap: 20px;
     padding: 20px;
 }
@@ -199,7 +228,7 @@ button:hover {
     display: grid;
     grid-template-columns: 4fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 3fr 1fr;
-    border-left: 8px solid blue;
+    border-left: 8px solid #4f46e5;
     border-radius: 6px;
     padding: 20px;
     background-color: white;
@@ -207,7 +236,7 @@ button:hover {
 }
 
 .project-card:hover {
-    border-left: 8px solid darkblue;
+    border-left: 8px solid #312e81;
     transform: scale(1.03);
 }
 
@@ -285,4 +314,5 @@ h4 {
     color: rebeccapurple;
     align-self: end;
     padding-left: 10px;
+    font-weight: 600;
 }
