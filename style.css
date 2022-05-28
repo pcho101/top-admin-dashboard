@@ -186,7 +186,7 @@ button:hover {
 
 .left-bulletin {
     display: grid;
-    grid-template-rows: 30px 9fr;
+    grid-template-rows: 30px min-content;
 }
 
 .projects {
