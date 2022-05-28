@@ -1,7 +1,7 @@
-# top-admin-dashboard
+# admin-dashboard
 
 ### [The Odin Project](https://www.theodinproject.com/)
 
-[Live Demo Link to be added later]()
+[Live Demo](https://pcho101.github.io/top-admin-dashboard/)
 
 Dashboard using CSS Grid Layout.
